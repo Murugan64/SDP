@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - BRAINIACS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eef2f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .search-container {
+            max-width: 600px;
+            width: 90%;
+            padding: 25px;
+            background: white;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+        .search-box {
+            width: calc(100% - 24px);
+            padding: 14px;
+            border: 2px solid #007BFF;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            margin-bottom: 15px;
+            transition: border 0.3s ease;
+        }
+        .search-box:focus {
+            border-color: #0056b3;
+        }
+        .search-btn {
+            background: #007BFF;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        .search-btn:hover {
+            background: #0056b3;
+        }
+        .search-results {
+            margin-top: 20px;
+            text-align: left;
+            max-height: 200px;
+            overflow-y: auto;
+            border-top: 2px solid #007BFF;
+            padding-top: 10px;
+        }
+        .result {
+            padding: 12px;
+            background: #f0f8ff;
+            margin: 8px 0;
+            border-radius: 8px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .result:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .back-home {
+            display: block;
+            margin-top: 20px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        .back-home:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <h2>Search for Skill-Based Content</h2>
+        <input type="text" class="search-box" placeholder="Search for topics, skills, or users...">
+        <button class="search-btn">Search</button>
+        <div class="search-results">
+            <div class="result">Web Development Best Practices</div>
+            <div class="result">How to Improve Graphic Design Skills</div>
+            <div class="result">Mastering Public Speaking</div>
+            <div class="result">Effective Time Management Tips</div>
+        </div>
+        <a href="home.html" class="back-home">Back to Home</a>
+    </div>
+</body>
+</html>

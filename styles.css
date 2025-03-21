@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+h2 {
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button:hover {
+    background: #0056b3;
+}
+p {
+    margin-top: 10px;
+}
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Chat Container */
+.chat-container {
+    display: flex;
+    height: 80vh;
+    width: 80%;
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.chat-sidebar {
+    width: 30%;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-sidebar h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.chat-sidebar ul {
+    list-style: none;
+    padding: 0;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.chat-sidebar ul li {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chat-sidebar ul li:hover,
+.chat-sidebar ul .active {
+    background: #1a252f;
+    font-weight: bold;
+}
+
+/* Chat Box */
+.chat-box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ecf0f1;
+}
+
+/* Chat Header */
+.chat-header {
+    background: #2980b9;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Chat Messages */
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+/* Chat Bubbles */
+.message {
+    max-width: 60%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+}
+
+.received {
+    background: #dfe6e9;
+    align-self: flex-start;
+}
+
+.sent {
+    background: #3498db;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Message Timestamp */
+.timestamp {
+    font-size: 12px;
+    color: #555;
+    position: absolute;
+    bottom: -18px;
+    right: 8px;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background: #f1f1f1;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.chat-input button {
+    padding: 12px 20px;
+    background: #2980b9;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.chat-input button:hover {
+    background: #1a66a3;
+}
+
+/* Back to Home Link */
+.back-home {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 12px;
+    width: 160px;
+    background: #34495e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.back-home:hover {
+    background: #2c3e50;
+}
+
+/* Form Links Styling */
+.form-links {
+    margin-top: 10px;
+}
+
+.form-links a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}

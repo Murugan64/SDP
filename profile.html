@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - BRAINIACS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eef2f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .profile-container {
+            max-width: 500px;
+            width: 90%;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #007BFF;
+            margin-bottom: 15px;
+        }
+        .profile-name {
+            font-size: 26px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .profile-bio {
+            color: #555;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .profile-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+        .stat {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+        }
+        .edit-profile {
+            margin-top: 20px;
+            background: #007BFF;
+            color: white;
+            padding: 12px 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        .edit-profile:hover {
+            background: #0056b3;
+        }
+        .back-home {
+            display: block;
+            margin-top: 15px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .back-home:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+        <h2 class="profile-name">John Doe</h2>
+        <p class="profile-bio">Web Developer | Tech Enthusiast | Lifelong Learner</p>
+        <div class="profile-stats">
+            <div>
+                <p class="stat">150</p>
+                <p class="stat-label">Posts</p>
+            </div>
+            <div>
+                <p class="stat">1.2K</p>
+                <p class="stat-label">Followers</p>
+            </div>
+            <div>
+                <p class="stat">980</p>
+                <p class="stat-label">Following</p>
+            </div>
+        </div>
+        <button class="edit-profile">Edit Profile</button>
+        <a href="home.html" class="back-home">Back to Home</a>
+    </div>
+</body>
+</html>

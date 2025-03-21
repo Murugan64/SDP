@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - BRAINIACS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #004aad;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .feed {
+            text-align: center;
+        }
+        .post {
+            background: #e3f2fd;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .post:hover {
+            transform: translateY(-5px);
+        }
+        .post h3 {
+            color: #004aad;
+            margin-bottom: 10px;
+        }
+        .post p {
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BRAINIACS</h1>
+        <nav>
+            <a href="profile.html">Profile</a>
+            <a href="search.html">Search</a>
+            <a href="messages.html">Messages</a>
+            <a href="signin.html">Sign Out</a>
+        </nav>
+    </header>
+    <main>
+        <section class="feed">
+            <h2>Skill-Based Content</h2>
+            <div class="post">
+                <h3>How to Improve Coding Skills</h3>
+                <p>Practice coding daily and contribute to open-source projects.</p>
+            </div>
+            <div class="post">
+                <h3>Graphic Design Tips</h3>
+                <p>Use contrast and spacing wisely to enhance readability.</p>
+            </div>
+            <div class="post">
+                <h3>Public Speaking Confidence</h3>
+                <p>Practice in front of a mirror and engage with small audiences.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
